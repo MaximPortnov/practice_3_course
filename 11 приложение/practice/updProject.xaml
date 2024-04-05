@@ -1,0 +1,49 @@
+﻿<Window x:Class="practice.updProject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practice"
+        mc:Ignorable="d"
+        MinHeight="390"
+        MinWidth="220"
+        Title="updProject" Height="390" Width="220">
+    <Grid>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center"  Width="200" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="cost"/>
+            <TextBox x:Name="tb_cost" Grid.Row="1" />
+            <Label Grid.Row="3" Content="start date"/>
+            <DatePicker x:Name="dp_startDate" Grid.Row="4" />
+            <Label Grid.Row="6" Content="end date"/>
+            <DatePicker x:Name="dp_endDate" Grid.Row="7" />
+            <Label Grid.Row="9" Content="status"/>
+            <TextBox x:Name="tb_status" Grid.Row="10"/>
+            <Label Grid.Row="12" Content="manager"/>
+            <ComboBox x:Name="cb_manager" Grid.Row="13"/>
+            <Label Grid.Row="15" Content="client"/>
+            <ComboBox x:Name="cb_client" Grid.Row="16"/>
+            <Button Grid.Row="18" Content="update project" Click="Button_Click"/>
+        </Grid>
+    </Grid>
+</Window>
